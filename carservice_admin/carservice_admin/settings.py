@@ -57,7 +57,7 @@ ROOT_URLCONF = "carservice_admin.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -129,6 +129,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 # Login Settings
-LOGIN_URL = "/session/login/"
-LOGIN_REDIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = LOGIN_URL
+# LOGIN_URL = "/session/login/"
+# LOGIN_REDIRECT_URL = "/"
+# LOGOUT_REDIRECT_URL = LOGIN_URL
