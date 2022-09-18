@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     # apps related to this project
     "carservice_admin.apps.website",
+    "carservice_admin.apps.login",
 ]
 
 MIDDLEWARE = [
